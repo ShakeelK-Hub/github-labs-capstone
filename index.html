@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BMW M3 E46</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #111;
+    color: #eee;
+    line-height: 1.6;
+  }
+  header {
+    background: #000;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 4px solid #e31b23;
+  }
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+    color: #e31b23;
+    text-shadow: 0 0 10px #e31b23;
+  }
+  header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ccc;
+  }
+  .hero {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/8/8d/BMW_M3_E46_red.jpg') no-repeat center/cover;
+    height: 400px;
+    position: relative;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+  }
+  .hero-text {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 15px #e31b23;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    color: #e31b23;
+    border-bottom: 2px solid #e31b23;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .specs div {
+    background: #222;
+    flex: 1 1 200px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #e31b23aa;
+  }
+
+  .specs div h3 {
+    margin-bottom: 0.6rem;
+    color: #f44336;
+  }
+
+  .history p {
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+
+  /* Gallery Slider */
+  .gallery {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #e31b23aa;
+    display: none;
+  }
+  .gallery img.active {
+    display: block;
+  }
+  .gallery-controls {
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+  .gallery-controls button {
+    background: #e31b23;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .gallery-controls button:hover {
+    background: #a91719;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #000;
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 600px) {
+    .specs {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BMW M3 E46</h1>
+  <p>The iconic 3rd generation M3 – pure driving passion</p>
+</header>
+
+<div class="hero">
+  <div class="hero-text">BMW M3 E46</div>
+</div>
+
+<main>
+
+  <section class="history">
+    <h2>History & Legacy</h2>
+    <p>The BMW M3 E46, produced from 2000 to 2006, is widely regarded as one of the best M3s ever made. With its naturally aspirated 3.2L inline-six engine producing 333 hp, it blends raw power with sharp handling and classic styling. It’s a legend among car enthusiasts, renowned for its balance, precision, and driving pleasure.</p>
+  </section>
+
+  <section class="specs-section">
+    <h2>Key Specifications</h2>
+    <div class="specs">
+      <div>
+        <h3>Engine</h3>
+        <p>3.2L I6 S54 naturally aspirated</p>
+      </div>
+      <div>
+        <h3>Power</h3>
+        <p>333 hp @ 7,900 rpm</p>
+      </div>
+      <div>
+        <h3>Torque</h3>
+        <p>365 Nm (269 lb-ft) @ 4,900 rpm</p>
+      </div>
+      <div>
+        <h3>0-100 km/h</h3>
+        <p>4.8 seconds</p>
+      </div>
+      <div>
+        <h3>Top Speed</h3>
+        <p>250 km/h (electronically limited)</p>
+      </div>
+      <div>
+        <h3>Transmission</h3>
+        <p>6-speed manual / SMG II (sequential manual)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/BMW_M3_E46_red.jpg" alt="BMW M3 E46 Red" class="active" />
+      <img src="https://cdn.bmwblog.com/wp-content/uploads/2020/02/BMW-M3-E46-40th-Anniversary-edition-4.jpg" alt="BMW M3 E46 Blue" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/BMW_M3_E46_3.2l_I6_S54_engine.jpg" alt="BMW M3 E46 Engine" />
+    </div>
+    <div class="gallery-controls">
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 BMW M3 E46 Fan Page
+</footer>
+
+<script>
+  const images = document.querySelectorAll('.gallery img');
+  let currentIndex = 0;
+
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.classList.toggle('active', i === index);
+    });
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
+</script>
+
+</body>
+</html>
