@@ -2,10 +2,7 @@
 
 <div align="center">
 
-![Portfolio Preview](https://img.shields.io/badge/Portfolio-Live%20Demo-brightgreen?style=for-the-badge&logo=github-pages)
-![GitHub repo size](https://img.shields.io/github/repo-size/ShakeelK-Hub/github-labs-capstone?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/ShakeelK-Hub/github-labs-capstone?style=for-the-badge)
-![GitHub workflow status](https://img.shields.io/github/actions/workflow/status/ShakeelK-Hub/github-labs-capstone/echo.yml?label=CI%2FCD&style=for-the-badge)
+
 
 **A comprehensive demonstration of GitHub's powerful development ecosystem**
 
